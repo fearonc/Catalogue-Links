@@ -15,14 +15,15 @@ body {
 }
 
 .catalogue-title {
-  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 65px;
-  margin-top: 60vh;
-  font-family: 'Segoe UI', sans-serif; /* You can change this */
+  font-family: 'Segoe UI', sans-serif;
   color: #333;
-}
-
-
+  text-align: center;
+  
 .center-box {
   width: 400px;
   margin: 100px auto;
@@ -72,6 +73,7 @@ body {
 .sidebar li {
   margin: 8px 0;
 }
+
 
 
 

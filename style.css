@@ -14,6 +14,14 @@ body {
   opacity: 1; /* Keep full page visible */
 }
 
+.catalogue-title {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 40px;
+  font-family: 'Segoe UI', sans-serif; /* You can change this */
+  color: #333;
+}
+
 
 .center-box {
   width: 400px;
@@ -64,6 +72,7 @@ body {
 .sidebar li {
   margin: 8px 0;
 }
+
 
 
 

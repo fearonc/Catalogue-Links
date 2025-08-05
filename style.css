@@ -5,8 +5,8 @@ body {
   background-color: #f2f2f2; /* off-white/grey */
   background-image: url('EDIT%20Logo.png'); /* Replace with your actual logo file name */
   background-repeat: no-repeat;
-  background-position: center right;
-  background-size: 300px; /* Adjust size as needed */
+  background-position: center;
+  background-size: 800px; /* Adjust size as needed */
   opacity: 1; /* Keep full page visible */
 }
 
@@ -60,5 +60,6 @@ body {
 .sidebar li {
   margin: 8px 0;
 }
+
 
 

@@ -17,7 +17,7 @@ body {
 .catalogue-title {
   text-align: center;
   font-size: 48px;
-  margin-top: 40px;
+  margin-top: 60vh;
   font-family: 'Segoe UI', sans-serif; /* You can change this */
   color: #333;
 }
@@ -72,6 +72,7 @@ body {
 .sidebar li {
   margin: 8px 0;
 }
+
 
 
 

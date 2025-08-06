@@ -7,15 +7,24 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 2em;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
+      margin: 0;
+      padding: 2em;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+    }
+
+    .faq-container {
+      background-color: #ffffffcc; /* light grey with slight transparency */
+      width: 70%;
+      padding: 2em;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
       text-align: center;
-      margin-bottom: 1em;
+      margin-top: 0;
     }
 
     .faq-item {
@@ -43,7 +52,8 @@
   </style>
 </head>
 <body>
-  <h1>Frequently Asked Questions</h1>
+  <div class="faq-container">
+    <h1>Frequently Asked Questions</h1>
 
   <div class="faq-item">
     <div class="faq-question">Q: What is the difference between Master/Child and Linked SKUs?</div>
@@ -88,3 +98,4 @@
   <a class="back-button" onclick="window.history.back()">← Back</a>
 </body>
 </html>
+

@@ -15,7 +15,7 @@
     }
 
     .faq-container {
-      background-color: #ffffffcc; /* light grey with slight transparency */
+      background-color: #ffffffcc;
       width: 70%;
       padding: 2em;
       border-radius: 15px;
@@ -28,11 +28,25 @@
     }
 
     .faq-item {
-      margin-bottom: 1.5em;
+      padding: 1em;
+      margin-bottom: 1em;
+      border-radius: 8px;
+    }
+
+    /* Alternate background for every other faq-item */
+    .faq-item:nth-child(even) {
+      background-color: #f0f0f0;
     }
 
     .faq-question {
+      color: red;
       font-weight: bold;
+    }
+
+    .faq-answer {
+      color: green;
+      font-style: italic;
+      margin-top: 0.3em;
     }
 
     .back-button {
@@ -98,4 +112,5 @@
   <a class="back-button" onclick="window.history.back()">← Back</a>
 </body>
 </html>
+
 

@@ -1,8 +1,97 @@
-<!-- FAQ Modal -->
-<div id="faqModal" style="display: none;">
-  <div class="faq-backdrop">
-    <div class="faq-container">
-      <h1>Frequently Asked Questions</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Links</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .modal-content {
+      background-color: #ffffffcc;
+      margin: 5% auto;
+      padding: 2em;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      width: 70%;
+      max-height: 80%;
+      overflow-y: auto;
+    }
+
+    .close-button {
+      float: right;
+      font-size: 1.5em;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .faq-question {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .faq-answer {
+      display: none;
+      font-style: italic;
+      margin-top: 0.5em;
+    }
+
+    .faq-item:nth-child(even) {
+      background-color: #f0f0f0;
+    }
+
+    .faq-item {
+      padding: 1em;
+      margin-bottom: 1em;
+      border-radius: 8px;
+    }
+
+    .label-q {
+      color: red;
+      font-weight: bold;
+    }
+
+    .label-a {
+      color: green;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="catalogue-title">Catalogue</h1>
+  <div class="sidebar">
+    <h2>Files</h2>
+    <ul>
+      <li><a href="https://hutgroupnorthwich.sharepoint.com/:x:/r/sites/NewLineForms/_layouts/15/Doc.aspx?sourcedoc=%7B2C3B51CE-6068-4C7A-B8A5-45AF8AE5A7A2%7D&file=H%26B%20NLF.xlsx&action=download" target="_blank" rel="noopener">Beauty NLF</a></li>
+      <li><a href="https://hutgroupnorthwich.sharepoint.com/:x:/r/sites/NewLineForms/Shared%20Documents/Health%20%26%20Beauty/Linked%20SKU%20Template.xlsx?d=wc62748fe461c49dd8a18a9c186c8a4e5&csf=1&web=1&e=5cLPKD" target="_blank">Linking SKUs</a></li>
+    </ul>
+    <h2>Services</h2>
+    <ul>
+      <li><a href="https://servicedeskplus.thg.com/app/itdesk/ui/requests/add?reqTemplate=4489000000430918" target="_blank">Create New SKUs</a></li>
+      <li><a href="https://servicedeskplus.thg.com/app/itdesk/ui/requests/add?reqTemplate=4489000000770135" target="_blank">Update Existing SKUs</a></li>
+    </ul>
+    <h2>FAQ</h2>
+    <ul>
+      <li><a href="#" onclick="openFAQ(); return false;">View FAQ</a></li>
+    </ul>
+  </div>
+
+  <!-- Modal FAQ Content -->
+  <div id="faqModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeFAQ()">&times;</span>
+      <h2>Frequently Asked Questions</h2>
 
       <div class="faq-item">
         <div class="faq-question"><span class="label-q">Q:</span> What is the difference between Master/Child and Linked SKUs?</div>
@@ -39,107 +128,35 @@
         <div class="faq-question"><span class="label-q">Q:</span> How can I search for an existing SKU?</div>
         <div class="faq-answer"><span class="label-a">A:</span> You can use Catalogue UI to search for existing SKUs, Title, Barcode, Catalogue numbers.<br/>Don’t use Tabernus to search for products as it is outdated and unreliable.</div>
       </div>
-
-      <a class="back-button" onclick="closeFAQ()">← Close</a>
     </div>
   </div>
-</div>
 
-<style>
-  /* FAQ Modal Styling */
-  #faqModal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-  }
-
-  .faq-backdrop {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 40px;
-    width: 100%;
-    height: 100%;
-    background: transparent; /* Removed darkening */
-    overflow-y: auto;
-  }
-
-  .faq-container {
-    background-color: #ffffff; /* Fully opaque */
-    width: 40%; /* 20% narrower than before */
-    padding: 2em;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    z-index: 10000;
-  }
-
-  .faq-item {
-    padding: 1em;
-    margin-bottom: 1em;
-    border-radius: 8px;
-  }
-
-  .faq-item:nth-child(even) {
-    background-color: #f0f0f0;
-  }
-
-  .faq-question {
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  .faq-answer {
-    display: none;
-    font-style: italic;
-    margin-top: 0.5em;
-  }
-
-  .label-q {
-    color: red;
-    font-weight: bold;
-  }
-
-  .label-a {
-    color: green;
-    font-style: italic;
-    font-weight: normal;
-  }
-
-  .back-button {
-    display: inline-block;
-    margin-top: 2em;
-    padding: 0.5em 1em;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .back-button:hover {
-    background-color: #0056b3;
-  }
-</style>
-
-<script>
-  function openFAQ() {
-    document.getElementById('faqModal').style.display = 'block';
-  }
-
-  function closeFAQ() {
-    document.getElementById('faqModal').style.display = 'none';
-  }
-
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.faq-question').forEach((question) => {
-      question.addEventListener('click', () => {
-        const answer = question.nextElementSibling;
-        const isVisible = answer.style.display === 'block';
-        answer.style.display = isVisible ? 'none' : 'block';
+  <script>
+    // FAQ toggle
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+          const answer = question.nextElementSibling;
+          answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+        });
       });
     });
-  });
-</script>
+
+    function openFAQ() {
+      document.getElementById('faqModal').style.display = 'block';
+    }
+
+    function closeFAQ() {
+      document.getElementById('faqModal').style.display = 'none';
+    }
+
+    // Close on outside click
+    window.onclick = function(event) {
+      const modal = document.getElementById('faqModal');
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>

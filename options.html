@@ -46,7 +46,7 @@
 </div>
 
 <style>
-  /* FAQ Modal Only */
+  /* FAQ Modal Styling */
   #faqModal {
     position: fixed;
     top: 0;
@@ -63,16 +63,16 @@
     padding-top: 40px;
     width: 100%;
     height: 100%;
-    background: transparent;
+    background: transparent; /* Removed darkening */
     overflow-y: auto;
   }
 
   .faq-container {
-    background-color: #ffffff;
-    width: 50%;
+    background-color: #ffffff; /* Fully opaque */
+    width: 40%; /* 20% narrower than before */
     padding: 2em;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     z-index: 10000;
   }
 

@@ -74,17 +74,23 @@
     <h2>Files</h2>
     <ul>
       <li><a href="https://hutgroupnorthwich.sharepoint.com/:f:/r/sites/NewLineForms/Shared%20Documents/Nutrition/Nutrition%20NLF%20+%20Set%20Attributes/Catalogue?csf=1&web=1&e=P1Sq2b" target="_blank" rel="noopener">Nutrition NLF</a></li>
-      <li><a href="https://hutgroupnorthwich.sharepoint.com/:x:/r/sites/NewLineForms/Shared%20Documents/Nutrition/Nutrition%20NLF%20+%20Set%20Attributes/Catalogue/Linking%20SKU%20Template.xlsx?d=wb101f5b396dc44ee97d409f011be771d&csf=1&web=1&e=usJVHu" target="_blank">Linking SKUs</a></li>
+      <li><a href="https://hutgroupnorthwich.sharepoint.com/:x:/r/sites/NewLineForms/Shared%20Documents/Health%20%26%20Beauty/Linked%20SKU%20Template.xlsx?d=wc62748fe461c49dd8a18a9c186c8a4e5&csf=1&web=1&e=5cLPKD" target="_blank">Linking SKUs</a></li>
     </ul>
-    <h2>Services</h2>
+    <br/><h2>Services</h2>
     <ul>
       <li><a href="https://servicedeskplus.thg.com/app/itdesk/ui/requests/add?reqTemplate=4489000000430918" target="_blank">Create New SKUs</a></li>
       <li><a href="https://servicedeskplus.thg.com/app/itdesk/ui/requests/add?reqTemplate=4489000000770135" target="_blank">Update Existing SKUs</a></li>
     </ul>
-    <h2>FAQ</h2>
+    <br/><h2>FAQ</h2>
     <ul>
       <li><a href="#" onclick="openFAQ(); return false;">View FAQ</a></li>
     </ul>
+    <br/><h2>Contacts</h2>
+<ul>
+  <li><a href="#" onclick="openModal('catalogueModal'); return false;">Catalogue</a></li>
+  <li><a href="#" onclick="openModal('contentModal'); return false;">Supplier Content</a></li>
+  <li><a href="#" onclick="openModal('hsCodesModal'); return false;">HS Codes</a></li>
+</ul>
   </div>
 
   <!-- Modal FAQ Content -->
@@ -130,6 +136,126 @@
       </div>
     </div>
   </div>
+<!-- Catalogue Contacts Modal -->
+<div id="catalogueModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal('catalogueModal')">&times;</span>
+    <table class="styled-table">
+      <caption>Catalogue Contacts</caption>
+	<tbody>
+		<tr>
+			<th>Name</th>
+			<th>Role</th>
+			<th>Email</th>
+		</tr>
+		<tr>
+			<td>Mike Woodhall</td>
+			<td>Manager</td>
+			<td>michael.woodhall@thgingenuity.com</td>	
+		</tr>
+		<tr>
+			<td>Katherine Peters</td>
+			<td>Senior Catalogue Executive(Beauty/LUX)</td>
+			<td>katherine.peters@thgingenuity.com</td>	
+		</tr>
+		<tr>
+			<td>George Mclean</td>
+			<td>Senior Catalogue Executive(Ingenuity)</td>
+			<td>george.mclean@thgingenuity.com</td>	
+		</tr>
+		<tr>
+			<td>Connor Fearon</td>
+			<td>Senior Catalogue Executive(My Protein/Beauty/LUX)</td>
+			<td>connor.fearon@thgingenuity.com</td>	
+		</tr>
+		<tr>
+			<td>Alyona Beevers</td>
+			<td>Catalogue Executive(Beauty/LUX)</td>
+			<td>alyona.beevers@thgingenuity.com<</td>	
+		</tr>
+		
+	</tbody>
+</table>
+  </div>
+</div>
+
+<!-- Content Contacts Modal -->
+<div id="contentModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal('contentModal')">&times;</span>
+    <table class="styled-table">
+      <caption>Supplier Content Contacts</caption>
+	<tbody>
+		<tr>
+			<th>Name</th>
+			<th>Role</th>
+			<th>Email</th>
+		</tr>
+		<tr>
+			<td>Jemma Taylor</td>
+			<td>Manager</td>
+			<td>jemma.taylor@thgingenuity.com</td>	
+		</tr>
+		<tr>
+			<td>Charley Darlington</td>
+			<td>Senior Supplier Content Editor(Beauty)</td>
+			<td>charley.darlington@thgingenuity.com</td>	
+		</tr>
+		<tr>
+			<td>Liv Lofthouse</td>
+			<td>Senior Supplier Content Editor(Beauty)</td>
+			<td>liv.lofthouse@thgingenuity.com</td>	
+		</tr>
+		<tr>
+			<td>Tash Ridgway</td>
+			<td>Supplier Content Editor(Beauty)</td>
+			<td>natasha.ridgway@thgingenuity.com</td>	
+		</tr>
+		<tr>
+			<td>Laura Givanovich</td>
+			<td>Supplier Content Editor(Ingenuity)</td>
+			<td>laura.givanovich@thgingenuity.com</td>	
+		</tr>
+		<tr>
+			<td>Chloe McGeever</td>
+			<td>Supplier Content Editor(Ingenuity)</td>
+			<td>chloe.mcgeever@thgingenuity.com</td>	
+		</tr>
+		
+	</tbody>
+</table>
+  </div>
+</div>
+
+
+
+<!-- HS Codes Contacts Modal -->
+<div id="hsCodesModal" class="modal">
+<div class="modal-content">
+    <span class="close-button" onclick="closeModal('hsCodesModal')">&times;</span>
+    <table class="styled-table">
+      <caption>HS Codes Contacts</caption>
+	<tbody>
+		<tr>
+			<th>Name</th>
+			<th>Role</th>
+			<th>Email</th>
+		</tr>
+		<tr>
+			<td>Zoe Scott</td>
+			<td>Customs Classification Officer</td>
+			<td>zoe.scott@thgingenuity.com</td>	
+		</tr>
+		<tr>
+			<td>Dale Walker</td>
+			<td>Dangeroud Goods Manager</td>
+			<td>dale.walker@thgingenuity.com</td>	
+		</tr>		
+	</tbody>
+</table>
+  </div>
+</div>
+
 
   <script>
     // FAQ toggle
@@ -150,14 +276,33 @@
       document.getElementById('faqModal').style.display = 'none';
     }
 
+    function openModal(modalId) {
+  document.getElementById(modalId).style.display = 'block';
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = 'none';
+}
+
+
     // Close on outside click
     window.onclick = function(event) {
-      const modal = document.getElementById('faqModal');
-      if (event.target === modal) {
-        modal.style.display = 'none';
-      }
+  const modals = document.querySelectorAll('.modal');
+  modals.forEach(modal => {
+    if (event.target === modal) {
+      modal.style.display = 'none';
     }
+  });
+};
+
   </script>
 </body>
 
 </html>
+
+
+
+
+
+
+

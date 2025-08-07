@@ -190,6 +190,11 @@ body {
 }
 
 
+.catalogue-title {
+  opacity: 1 !important;
+  transition: none !important;
+}
+
 
 
 

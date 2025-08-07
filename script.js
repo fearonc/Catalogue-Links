@@ -73,3 +73,10 @@ function closeModal(modalId) {
   });
 };
 
+
+
+// Page fade-in on load
+window.addEventListener('load', () => {
+  document.body.style.opacity = '1';
+});
+

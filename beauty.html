@@ -140,8 +140,15 @@
 <div id="catalogueModal" class="modal">
   <div class="modal-content">
     <span class="close-button" onclick="closeModal('catalogueModal')">&times;</span>
-    <table border="1" cellpadding="1" cellspacing="1" style="width:700px">
-	<caption>Catalogue Contacts</caption>
+    <table class="styled-table">
+      <caption>Catalogue Contacts</caption>
+      <thead>
+        <tr>
+          <th>Role</th>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
 	<tbody>
 		<tr>
 			<th>Role</th>
@@ -249,6 +256,7 @@ function closeModal(modalId) {
 </body>
 
 </html>
+
 
 
 

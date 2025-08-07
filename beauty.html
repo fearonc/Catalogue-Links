@@ -85,6 +85,12 @@
     <ul>
       <li><a href="#" onclick="openFAQ(); return false;">View FAQ</a></li>
     </ul>
+    <h2>Contacts</h2>
+<ul>
+  <li><a href="#" onclick="openModal('catalogueModal'); return false;">Catalogue</a></li>
+  <li><a href="#" onclick="openModal('contentModal'); return false;">Supplier Content</a></li>
+  <li><a href="#" onclick="openModal('hsCodesModal'); return false;">HS Codes</a></li>
+</ul>
   </div>
 
   <!-- Modal FAQ Content -->
@@ -130,6 +136,48 @@
       </div>
     </div>
   </div>
+<!-- Catalogue Contacts Modal -->
+<div id="catalogueModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal('catalogueModal')">&times;</span>
+    <h2>Catalogue Team Contacts</h2>
+    <ul>
+      <li>Manager - Mike Woodhall - michael.woodhall@thgingenuity.com</li>
+      <li>Senior Catalogue Executive(Beauty/LUX) - Katherine Peters - katherine.peters@thgingenuity.com</li>
+      <li>Senior Catalogue Executive(Ingenuity) - George Mclean - george.mclean@thgingenuity.com</li>
+      <li>Senior Catalogue Executive(My Protein/Beauty/LUX) - Connor Fearon - connor.fearon@thgingenuity.com</li>
+      <li>Catalogue Executive(Beauty/LUX) - Alyona Beevers - alyona.beevers@thgingenuity.com</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Content Contacts Modal -->
+<div id="contentModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal('contentModal')">&times;</span>
+    <h2>Supplier Content Team Contacts</h2>
+    <ul>
+      <li>Manager - Jemma Taylor – jemma.taylor@thgingenuity.com</li>
+      <li>Senior Supplier Content Editor(Beauty) – Charley Darlington - charley.darlington@thgingenuity.com</li>
+      <li>Senior Supplier Content Editor(Beauty) – Liv Lofthouse - liv.lofthouse@thgingenuity.com</li>
+      <li>Supplier Content Editor(Beauty) – Tash Ridgway - natasha.ridgway@thgingenuity.com</li>
+      <li>Supplier Content Editor(Ingenuity) – Laura Givanovich - laura.givanovich@thgingenuity.com</li>
+      <li>Supplier Content Editor(Ingenuity) – Chloe McGeever - chloe.mcgeever@thgingenuity.com</li>
+    </ul>
+  </div>
+</div>
+
+<!-- HS Codes Contacts Modal -->
+<div id="hsCodesModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal('hsCodesModal')">&times;</span>
+    <h2>HS Codes Contacts</h2>
+    <ul>
+      <li>Customs Classification Officer - Zoe Scott - zoe.scott@thgingenuity.com</li>
+      <li>Dangeroud Goods Manager - Dale Walker – zoe.scott@thgingenuity.com</li>
+    </ul>
+  </div>
+</div>
 
   <script>
     // FAQ toggle
@@ -161,3 +209,4 @@
 </body>
 
 </html>
+

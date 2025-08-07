@@ -27,3 +27,40 @@ document.addEventListener('mousemove', function(e) {
   document.body.style.backgroundPosition = `calc(50% + ${xOffset}px) calc(50% + ${yOffset}px)`;
 });
 
+
+    // FAQ toggle
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+          const answer = question.nextElementSibling;
+          answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+        });
+      });
+    });
+
+    function openFAQ() {
+      document.getElementById('faqModal').style.display = 'block';
+    }
+
+    function closeFAQ() {
+      document.getElementById('faqModal').style.display = 'none';
+    }
+
+    function openModal(modalId) {
+  document.getElementById(modalId).style.display = 'block';
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = 'none';
+}
+
+
+    // Close on outside click
+    window.onclick = function(event) {
+  const modals = document.querySelectorAll('.modal');
+  modals.forEach(modal => {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+};

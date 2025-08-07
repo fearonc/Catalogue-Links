@@ -143,7 +143,7 @@ body {
 
 
 /* 1. Animated gradient overlay */
-body::before {
+/*body::before {
   content: "";
   position: fixed;
   top: 0;
@@ -188,6 +188,7 @@ body {
   opacity: 0;
   transition: opacity 1s ease-in;
 }
+
 
 
 

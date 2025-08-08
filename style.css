@@ -197,8 +197,8 @@ body {
   transform: translateY(-2px) scale(1.05);
 }
 
-/* 4. Page fade-in */
-body {
+/* Apply fade only to wrapper */
+.fade-wrapper {
   opacity: 0;
   transition: opacity 1s ease-in;
 }

@@ -74,11 +74,10 @@ function closeModal(modalId) {
 };
 
 
-
 // Page fade-in on load
 window.addEventListener('load', () => {
-  document.body.style.opacity = '1';
+  const fadeWrapper = document.querySelector('.fade-wrapper');
+  if (fadeWrapper) {
+    fadeWrapper.style.opacity = '1';
+  }
 });
-
-
-

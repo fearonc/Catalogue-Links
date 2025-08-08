@@ -78,5 +78,10 @@ function closeModal(modalId) {
 // Page fade-in on load
 window.addEventListener('load', () => {
   document.body.style.opacity = '1';
+  
+  const logo = document.querySelector('.catalogue-logo');
+  if (logo) {
+    logo.style.opacity = '1';
+  }
 });
 

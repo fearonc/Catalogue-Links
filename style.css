@@ -66,8 +66,11 @@ body {
   cursor: pointer;
 }
 
-.center-box button:hover {
+/*.center-box button:hover {
   background-color: #0056b3;
+}*/
+.center-box button:hover {
+  background-color: #aa4421;
 }
 
 .sidebar {
@@ -202,6 +205,7 @@ body {
   opacity: 0;
   transition: opacity 1s ease-in;
 }
+
 
 
 

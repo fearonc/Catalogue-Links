@@ -23,10 +23,21 @@
       flex-wrap: wrap;
     }
 
-    .catalogue-button {
+    .beauty-button {
       padding: 1em 2em;
       font-size: 1em;
-      background-color: #007bff;
+      background-color: #000000;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+        .myp-button {
+      padding: 1em 2em;
+      font-size: 1em;
+      background-color: #dd592b;
       color: white;
       border: none;
       border-radius: 6px;
@@ -45,16 +56,17 @@
   <div class="center-box">
     <h1>Choose Your Division:</h1>
     <div class="button-group">
-      <button class="catalogue-button" onclick="window.location.href='beauty.html'">Beauty</button>
-      <button class="catalogue-button" onclick="window.location.href='mp-nutrition.html'">MP Nutrition</button>
-      <button class="catalogue-button" onclick="window.location.href='mp-clothing.html'">MP Clothing & Accessories</button>
-      <button class="catalogue-button" onclick="window.location.href='mp-hub.html'">MP Brand Hub</button>
+      <button class="beauty-button" onclick="window.location.href='beauty.html'">Beauty</button>
+      <button class="myp-button" onclick="window.location.href='mp-nutrition.html'">MP Nutrition</button>
+      <button class="myp-button" onclick="window.location.href='mp-clothing.html'">MP Clothing & Accessories</button>
+      <button class="myp-button" onclick="window.location.href='mp-hub.html'">MP Brand Hub</button>
     </div>
   </div>
   </div>
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

@@ -201,6 +201,20 @@ body {
 
 
 
+/* 1. Default cursor for the page */
+body {
+    cursor: url('assets/flaming_cursor.ani'), auto;
+}
+
+/* 2. Clickable elements: override cursor */
+a, button, input[type="button"], input[type="submit"] {
+    cursor: url('assets/pointer.cur'), auto;
+}
+
+/* Optional: hover for any custom class */
+.clickable {
+    cursor: url('assets/pointer.cur'), auto;
+}
 
 
 

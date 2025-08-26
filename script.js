@@ -81,3 +81,37 @@ window.addEventListener('load', () => {
     fadeWrapper.style.opacity = '1';
   }
 });
+
+
+
+
+const effectsLayer = document.getElementById('click-effects');
+const cursor = document.getElementById('custom-cursor');
+
+// Move the custom cursor with the mouse
+document.addEventListener('mousemove', e => {
+    cursor.style.left = e.pageX + 'px';
+    cursor.style.top = e.pageY + 'px';
+});
+
+// On click, add muzzle flash + bullet hole
+document.addEventListener('click', e => {
+    const x = e.pageX;
+    const y = e.pageY;
+
+    // Flash effect
+    const flash = document.createElement('div');
+    flash.className = 'effect flash';
+    flash.style.left = x + 'px';
+    flash.style.top = y + 'px';
+    effectsLayer.appendChild(flash);
+    setTimeout(() => flash.remove(), 200); // remove flash after animation
+
+    // Bullet hole (with random rotation)
+    const hole = document.createElement('div');
+    hole.className = 'effect bullet-hole';
+    hole.style.left = x + 'px';
+    hole.style.top = y + 'px';
+    hole.style.transform = `translate(-50%, -50%) rotate(${Math.random()*360}deg)`;
+    effectsLayer.appendChild(hole);
+});

@@ -211,11 +211,6 @@ a, button, input[type="button"], input[type="submit"] {
     cursor: url('LavaPointer.cur'), auto;
 }
 
-/* Optional: hover for any custom class */
-.clickable {
-    cursor: url('LavaPointer.cur'), auto;
-}
-
 
 
 

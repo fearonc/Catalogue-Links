@@ -203,13 +203,10 @@ body {
 
 /* 1. Default cursor for the page */
 body {
-    cursor: url('LavaCursor.ani'), auto;
+    cursor: url('TargetCursor.png'), auto;
 }
 
-/* 2. Clickable elements: override cursor */
-a, button, input[type="button"], input[type="submit"] {
-    cursor: url('LavaPointer.cur'), auto;
-}
+
 
 
 

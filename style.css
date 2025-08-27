@@ -43,7 +43,7 @@ body {
 
   
 .center-box {
-  width: 400px;
+ /* width: 400px; */
   margin: 100px auto;
   padding: 30px;
   background-color: white;
@@ -198,6 +198,7 @@ body {
   opacity: 0;
   transition: opacity 1s ease-in;
 }
+
 
 
 

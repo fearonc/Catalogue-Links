@@ -7,7 +7,7 @@ body {
   font-family: Arial, sans-serif;
   height: 100%;
   background-color: #f2f2f2; /* off-white/grey */
-  background-image: url('media/EDIT%20Logo.png'); /* Replace with your actual logo file name */
+ /* background-image: url('media/EDIT%20Logo.png'); /* Replace with your actual logo file name */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 800px; /* Adjust size as needed */
@@ -39,10 +39,10 @@ body {
 
 .catalogue-title {
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 65px;
+  font-size: 70px;
   font-family: 'Segoe UI', sans-serif;
   color: #333;
   text-align: center;
@@ -186,6 +186,7 @@ body {
   opacity: 0;
   transition: opacity 1s ease-in;
 }
+
 
 
 

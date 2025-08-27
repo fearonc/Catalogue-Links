@@ -66,6 +66,7 @@ body {
 }
 
 .center-box {
+  z-index: 3;          /* Higher than 1 */
   width: 400px;
   margin: 100px auto;
   padding: 30px;
@@ -236,6 +237,7 @@ body {
   opacity: 0;
   transition: opacity 1s ease-in;
 }
+
 
 
 

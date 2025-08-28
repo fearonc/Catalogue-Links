@@ -149,11 +149,12 @@ body {
   right: 20px; /* Changed from left to right */
   text-decoration: none;
   background-color: #007bff;
+  text-color: #ffffff
   color: white;
   padding: 10px 16px;
   border-radius: 6px;
   font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.8);
   transition: background-color 0.3s;
 }
 
@@ -208,6 +209,7 @@ a:hover {
 a:active {
   color: #1a73e8;
 }
+
 
 
 

@@ -34,7 +34,12 @@ document.addEventListener('mousemove', function(e) {
   }
 });
 
-
+  // Logo
+  const logo = document.querySelector('.catalogue-logo');
+  if (logo) {
+    logo.style.transform = `translate(calc(-50% + ${xOffset}px), calc(-50% + ${yOffset}px))`;
+  }
+});
 
     // FAQ toggle
     document.addEventListener('DOMContentLoaded', function () {
@@ -115,3 +120,4 @@ window.addEventListener('load', () => {
 //    hole.style.transform = `translate(-50%, -50%) rotate(${Math.random()*360}deg)`;
 //    effectsLayer.appendChild(hole);
 //});
+

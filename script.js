@@ -32,7 +32,6 @@ document.addEventListener('mousemove', function(e) {
   if (title) {
     title.style.transform = `translate(calc(-50% + ${xOffset}px), calc(-50% + ${yOffset}px))`;
   }
-});
 
   // Logo
   const logo = document.querySelector('.catalogue-logo');
@@ -120,4 +119,5 @@ window.addEventListener('load', () => {
 //    hole.style.transform = `translate(-50%, -50%) rotate(${Math.random()*360}deg)`;
 //    effectsLayer.appendChild(hole);
 //});
+
 

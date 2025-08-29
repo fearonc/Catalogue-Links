@@ -46,6 +46,7 @@ body {
   z-index: 2;
   opacity: 1 !important;
   transition: opacity 1s ease-in;
+  pointer-events: none; /* let clicks pass through */
 }
 
 
@@ -225,6 +226,7 @@ a:hover {
 a:active {
   color: #1a73e8;
 }
+
 
 
 

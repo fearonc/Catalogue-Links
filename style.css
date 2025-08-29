@@ -25,16 +25,30 @@ body {
   pointer-events: none; /* Allow clicks to pass through */
 }
 
-.catalogue-logo {
+/*.catalogue-logo {
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px; /* Adjust size as needed */
+  width: 300px; 
   z-index: 1;
   opacity: 0;
   transition: opacity 1s ease-in;
+} */
+
+
+.catalogue-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px; /* Adjust size as needed */
+  z-index: 2;
+  opacity: 1 !important;
+  transition: opacity 1s ease-in;
 }
+
+
 
 
 .catalogue-title {
@@ -209,6 +223,7 @@ a:hover {
 a:active {
   color: #1a73e8;
 }
+
 
 
 

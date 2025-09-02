@@ -66,9 +66,9 @@ body {
   transition: none !important;
  
   /* Glowy black outline */
-/*  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
-*/  
+  
 .center-box {
  /* width: 400px; */
   margin: 100px auto;
@@ -226,6 +226,7 @@ a:hover {
 a:active {
   color: #1a73e8;
 }
+
 
 
 

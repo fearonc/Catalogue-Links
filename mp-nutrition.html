@@ -85,6 +85,7 @@
   <div class="sidebar">
   <h2>Systems</h2>
 <ul>
+	<li><a href="#" onclick="openModal('SystemsModal'); return false;">Different THG Systems</a></li>
   <li><a href="https://tools.io.thehut.local/catalogue/#!/product/search" target="_blank" rel="noopener">Catalogue UI</a></li>
 </ul>
     <br/><h2>Files</h2>
@@ -362,6 +363,55 @@
 </div>
 
 
+<!-- Systems Modal -->
+<div id="SystemsModal" class="modal">
+<div class="modal-content">
+    <span class="close-button" onclick="closeModal('SystemsModal')">&times;</span>
+    <table class="styled-table">
+      <caption>Different THG Systems</caption>
+	<tbody>
+		<tr>
+			<th>Name</th>
+			<th>Purpose</th>
+			</tr>
+		<tr>
+			<td>SAGE</td>
+			<td>Used for the physical production of products</td>
+		</tr>
+		<tr>
+			<td>Procure</td>
+			<td>Used for raising PO's</td>
+		</tr>
+<tr>
+			<td>Tabernus</td>
+			<td>The old "Catalogue" system. Discontinued and shouldn't be used</td>
+		</tr>
+		<tr>
+			<td>Pricing UI</td>
+			<td>Used by traders to set the 'for sale' price of SKUs on site/ add cost prices etc.</td>
+		</tr>
+		<tr>
+			<td>Voyager</td>
+			<td>Warehouse operations system. Managing the physical movement and processing of products in the warehouse.</td>
+		</tr>
+		<tr>
+			<td>Mars</td>
+			<td>Hosts the data that drives the website.</td>
+		</tr>
+		<tr>
+			<td>Milkyway</td>
+			<td>Similar function to mars. Aggregates the data from different systems to feed to site.</td>
+		</tr>
+				<tr>
+			<td>TeePee</td>
+			<td>Used by Traders to build/merchandise the websites.</td>
+		</tr>
+		
+	</tbody>
+</table>
+  </div>
+</div>
+		
 <script>
 (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="JekhgHK40bY7V30ExWALn";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
 </script>
@@ -371,6 +421,7 @@
 </body>
 
 </html>
+
 
 
 

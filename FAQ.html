@@ -85,6 +85,11 @@
       <div class="faq-answer"><span class="label-a">A:</span> Master/Child (Complex SKUs) = A single product displayed on list pages using the master SKU, with the child SKUs creating the drop down options on the PDP. Child SKUs have barcodes and hold stock in the warehouse, Master SKUs have no barcode and are purely for displaying the PDP on-site.<br/><br/>Linked SKUs = 2 or more completely separate SKUs which each appear individually on list pages, but have a “link” to the other SKUs within the linked group. Linked SKUs can be 2 or more Non-Complex SKUs, or 2 or more Master SKUs.</div>
     </div>
 
+		<div class="faq-item">
+        <div class="faq-question"><span class="label-q">Q:</span> What is an ALT SKU?</div>
+         <div class="faq-answer"><span class="label-a">A:</span> An ALT SKU (Alternative SKU) can have 2 common meanings. The first is when a SKU is ALT linked, it can act as a physical alternative product to send out once a SKU runs out of stock. E.g. If SKU A has an ALT link to SKU B, then if SKU A runs out of stock, the warehouse can send out SKU B as an alternative instead.<br/><br/>The more common use - on Myprotein specifically - is to display the same product in multiple places on-site. If the same child SKU needs to exist in two different relationships, then one is a SKU for the physical stock and will live in one location/relationship, the second can be an ALT SKU, it holds no stock and has a PRERELEASE barcode, and can live in a second location/relationship on site. Those two SKU will be ALT linked so that if someone orders the ALT SKU with no barcode, then stock from the linked SKU with a barcode will be sent out.<br/></div>
+      </div>
+
     <div class="faq-item">
       <div class="faq-question"><span class="label-q">Q:</span> Can I have more than one barcode on a SKU?</div>
       <div class="faq-answer"><span class="label-a">A:</span> Yes! We can load multiple barcodes to one THG SKU. The Catalogue and Warehouse systems are designed to work this way.</div>
@@ -132,4 +137,5 @@
   </script>
 </body>
 </html>
+
 

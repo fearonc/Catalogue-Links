@@ -2,128 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Catalogue Links</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-       .center-box {
-      width: 70%;
-      margin: 2em auto;
-      padding: 2em;
-      z-index: 3;
-      text-align: center;
-      background-color: #f9f9f9;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .button-group {
-      display: flex;
-      justify-content: center;
-      gap: 1.5em;
-      margin-top: 2em;
-      flex-wrap: wrap;
-    }
-
-    .beauty-button {
-      padding: 1em 2em;
-      font-size: 1em;
-       z-index: 4;
-      background-color: #000000;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
-    }
-
-        .beauty-button:hover {
-      background-color: #989898;
-    }
-
-          .myp-button {
-      padding: 1em 2em;
-      font-size: 1em;
-      background-color: #003942;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
-    }
-
-    .myp-button:hover {
-  background-color: #007b8e;
-}
-
-  
-  </style>
-
+  <title>Moved</title>
   <link rel="icon" href="CatLogo.png" type="image/png">
 
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Background video */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Center container */
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* Message box */
+    .box {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2em;
+      border-radius: 12px;
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      margin-bottom: 0.5em;
+      color: #111;
+    }
+
+    a {
+      font-size: 1.2em;
+      color: #003942;
+      text-decoration: none;
+      font-weight: bold;
+      word-break: break-word;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
-<video autoplay muted loop playsinline id="bg-video">
-  <source src="https://github.com/fearonc/Catalogue-Links/releases/download/V1.0/GlobeBackground.mp4" type="video/mp4">
-</video>
-<img src="media/Ingenuity%20logo.png" alt="Catalogue Logo" class="catalogue-logo">
-<h1 class="catalogue-title" style="color:#ffffff;">Catalogue</h1>
-  
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="https://github.com/fearonc/Catalogue-Links/releases/download/V1.0/GlobeBackground.mp4" type="video/mp4">
+  </video>
 
-  <div class="fade-wrapper">
-  <div class="center-box">
-    <h1>Choose Your Division:</h1>
-    <div class="button-group">
-      <button class="beauty-button" onclick="window.location.href='beauty.html'">Beauty</button>
-      <button class="myp-button" onclick="window.location.href='mp-nutrition.html'">MP Nutrition</button>
-      <button class="myp-button" onclick="window.location.href='mp-clothing.html'">MP Clothing & Accessories</button>
-      <button class="myp-button" onclick="window.location.href='mp-hub.html'">MP Brand Hub</button>
+  <div class="wrapper">
+    <div class="box">
+      <h1>We have moved to:</h1>
+      <p>
+        <a href="https://your-new-url-here.com" target="_blank">
+          https://your-new-url-here.com
+        </a>
+      </p>
     </div>
   </div>
-  </div>
 
-<script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="JekhgHK40bY7V30ExWALn";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
-
-  
-  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
